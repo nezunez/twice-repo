@@ -24,6 +24,7 @@ def download_uit_vsfc():
     out_dir.mkdir(parents=True, exist_ok=True)
 
     ds = load_dataset("tridm/UIT-VSFC")
+    # map the dataset split names to the local file names
     split_map = {"train": "train", "validation": "dev", "test": "test"}
     for hf_split, local_name in split_map.items():
         out_path = out_dir / f"{local_name}.tsv"

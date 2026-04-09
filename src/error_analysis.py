@@ -24,6 +24,7 @@ def analyze_errors(pred_path, sample_size=SAMPLE_SIZE):
     print(f"Total errors: {len(errors)} ({len(errors)/len(rows)*100:.1f}%)")
 
     rng = random.Random(SEED)
+    # pick a few mistakes so we can inspect them by hand
     sample = rng.sample(errors, min(sample_size, len(errors)))
 
     print(f"\n--- Sampled {len(sample)} misclassified examples ---\n")

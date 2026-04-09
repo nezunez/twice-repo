@@ -39,6 +39,7 @@ def prepare_uit_vsfc():
         raw = read_tsv(RAW_DIR / "uit_vsfc" / f"{split_name}.tsv")
         for r in raw:
             enc = int(r["encoded_sentiment"])
+            # drop neutral labels so the task stays binary
             if enc == 2:
                 all_rows.append({"text": r["text"], "label": "1", "split": split_name})
             elif enc == 0:
@@ -62,6 +63,7 @@ def prepare_sst2():
 
     train = [{"text": r["text"], "label": r["label"]} for r in train_raw]
     random.seed(SEED)
+    # shuffle before taking the dev slice
     random.shuffle(train)
     dev_size = min(len(val_raw), 1000)
     dev = train[:dev_size]

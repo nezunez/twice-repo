@@ -51,6 +51,7 @@ def read_tsv(path):
 
 class SentimentDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_len=MAX_LEN):
+        # turn raw text into tensors the trainer can use
         self.encodings = tokenizer(
             texts, truncation=True, padding="max_length", max_length=max_len, return_tensors="pt"
         )

@@ -215,6 +215,7 @@ def main():
     existing = load_existing_dict()
     print(f"Existing dictionary has {len(existing)} entries")
     
+    # keep the cleaner entries from the small dictionary first
     # Merge: existing takes priority, then add new ones
     merged = {}
     for vi, en in existing.items():

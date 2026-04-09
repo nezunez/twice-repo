@@ -66,6 +66,7 @@ def main():
     cm_train = read_tsv(DATA_DIR / "codemixed" / "train.tsv")
     cm_test = read_tsv(DATA_DIR / "codemixed" / "test.tsv")
 
+    # keep the same code-mixed test set for every setting
     test_texts, test_labels = extract_xy(cm_test)
 
     # Setting 1: Zero-shot (train on monolingual Vietnamese only)

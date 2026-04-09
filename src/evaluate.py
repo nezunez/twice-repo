@@ -59,6 +59,7 @@ def main():
         print("Usage: python evaluate.py <predictions.tsv> [name]")
         sys.exit(1)
 
+    # load the prediction file and print the usual scores
     pred_path = sys.argv[1]
     name = sys.argv[2] if len(sys.argv) > 2 else Path(pred_path).stem
 

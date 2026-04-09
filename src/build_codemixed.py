@@ -47,6 +47,7 @@ def code_mix_sentence(text, vi_en, sorted_keys, target_rate=DEFAULT_SWITCH_RATE,
     replacements = []
     used_positions = set()
 
+    # check longer phrases first so the replacements do not overlap
     for vi_phrase in sorted_keys:
         if vi_phrase not in lower_text:
             continue

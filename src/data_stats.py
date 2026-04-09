@@ -42,6 +42,7 @@ def print_stats(name, stats):
 
 
 def main():
+    # quick summary for each dataset we use
     datasets = {
         "Vietnamese (mono_vi)": ("mono_vi", False),
         "English (mono_en)": ("mono_en", False),
