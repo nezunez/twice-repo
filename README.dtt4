@@ -1,0 +1,13 @@
+I was responsible for data construction
+and preprocessing, including implement-
+ing download_data.py, prepare_splits.py,
+parse_large_dict.py, and build_codemixed.py
+to generate the synthetic Vietnamese–English
+code-mixed dataset. I also implemented the
+baseline model in baseline_lr.py. In the report,
+he contributed to writing the Introduction, Dataset,
+and parts of the Approach sections.
+
+Both authors collaborated on model develop-
+ment, experiment execution, and contributed to the
+Related Work and Conclusion sections.

@@ -1,0 +1,11 @@
+I focused on experimental design,
+model training, and evaluation. I implemented
+transformer training in train_transformer.py,
+evaluation in evaluate.py, and qualitative analy-
+sis in error_analysis.py. In the report, she con-
+tributed to writing the Experiments, Results, and
+Analysis sections.
+
+Both authors collaborated on model develop-
+ment, experiment execution, and contributed to the
+Related Work and Conclusion sections.
